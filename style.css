@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  position: relative;
+}
+.logo {
+  margin-right: 30px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+header .container .right {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav li a {
+  height: 72px;
+  padding: 0 15px;
+  color: rgb(167, 161, 161);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.landing {
+  width: 100%;
+  min-height: calc(100vh - 93px);
+}
+.landing .container{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    margin-top: 60px;
+}
+
+
+
+.right-l{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+.right-l .box img{
+    height: 420px !important;
+    border-radius: 20px;
+}
+.left-l h4{
+    color: #DC7030;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.left-l h2{
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.left-l p{
+    color: #a7a7a7;
+}
+
+@media (max-width:991px) {
+    .landing .container{
+        flex-direction: column;
+        margin: auto;
+    }
+    .nav{
+      display: none;
+    }
+    .landing .container{
+      margin-top: 50px;
+    }
+    .left-l{
+      margin-top: 30px;
+    }
+    .left-l h2{
+      font-size: 35px;
+    }
+}
